@@ -1,0 +1,12 @@
+const config = {
+    user: 'DimDimLogin',
+    password: 'DimDim123456', 
+    server: 'dimdimserver.database.windows.net',
+    database: 'DimDimSQL',
+    options: {
+        encrypt: true,
+        trustServerCertificate: false
+    }
+};
+
+module.exports = config;
