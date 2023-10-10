@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/2fb2797e-3b65-4c98-b777-f8fc1c162d68/resourceGroups/DImDim/providers/Microsoft.Web/sites/servernodejs-dimdim",
+    "appService.deploySubpath": "."
+}
