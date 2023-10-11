@@ -1,0 +1,96 @@
+{
+    "/users": {
+      "GET": {
+        "description": "Retorna a lista de todos os usuários.",
+        "parameters": [],
+        "example_response": {
+          "status": "success",
+          "data": []
+        }
+      },
+      "POST": {
+        "description": "Cria um novo usuário.",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Nome do usuário."
+          },
+          {
+            "name": "email",
+            "type": "string",
+            "description": "Email do usuário."
+          },
+          {
+            "name": "password",
+            "type": "string",
+            "description": "Senha do usuário."
+          }
+        ],
+        "example_request": {
+          "name": "John Doe",
+          "email": "john@example.com",
+          "password": "secret123"
+        },
+        "example_response": {
+          "status": "success",
+          "data": {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com"
+          }
+        }
+      },
+      "PUT": {
+        "description": "Atualiza informações de um usuário.",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "integer",
+            "description": "ID do usuário a ser atualizado."
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Nome do usuário."
+          },
+          {
+            "name": "email",
+            "type": "string",
+            "description": "Email do usuário."
+          }
+        ],
+        "example_request": {
+          "id": 1,
+          "name": "John Updated",
+          "email": "john.updated@example.com"
+        },
+        "example_response": {
+          "status": "success",
+          "data": {
+            "id": 1,
+            "name": "John Updated",
+            "email": "john.updated@example.com"
+          }
+        }
+      },
+      "DELETE": {
+        "description": "Remove um usuário.",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "integer",
+            "description": "ID do usuário a ser removido."
+          }
+        ],
+        "example_request": {
+          "id": 1
+        },
+        "example_response": {
+          "status": "success",
+          "message": "Usuário removido com sucesso."
+        }
+      }
+    }
+  }
+  
